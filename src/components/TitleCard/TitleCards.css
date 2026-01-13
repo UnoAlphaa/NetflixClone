@@ -1,0 +1,47 @@
+.titlecards{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.titlecards h2{
+    margin-bottom: 8px;
+}
+.class-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.class-list::-webkit-scrollbar{
+    display: none;
+}
+.class-list .card img{
+    width: 240px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card{
+    position: relative;
+}
+.card p{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 800px) {
+    .titlecards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .titlecards h2{
+        font-size: 15px;
+    }
+    .class-list img{
+        width: 160px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    
+}
